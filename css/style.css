@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promosi {
+  background-color: #ffeb3b;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.promosi h2 {
+  font-size: 2em;
+  animation: rainbow 2s infinite, bounce 1s infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.produk {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.produk h2 {
+  margin-bottom: 1em;
+}
+
+.produk-item {
+  display: inline-block;
+  background-color: white;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  vertical-align: top;
+  position: relative;
+}
+
+.produk-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+.produk-item h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.produk-item p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Specific product styles */
+.produk-1::before {
+  background-image: url("itel.png");
+}
+
+.produk-1::after {
+  content: "Itel Able 1\nHarga: 2,9 Juta";
+  white-space: pre-line;
+}
+
+.produk-2::before {
+  background-image: url("asus.png");
+}
+
+.produk-2::after {
+  content: "ASUS Vivobook L410MA\nHarga: 3,9 Juta";
+  white-space: pre-line;
+}
+
+.produk-3::before {
+  background-image: url("axio.png");
+}
+
+.produk-3::after {
+  content: "Axioo MyBook Hype 5\nHarga: 4 Juta";
+  white-space: pre-line;
+}
+
+.produk-4::before {
+  background-image: url("asus2.png");
+}
+
+.produk-4::after {
+  content: "Asus VivoBook Go 14\nHarga: 5 Juta";
+  white-space: pre-line;
+}
+
+.produk-5::before {
+  background-image: url("asus3.png");
+}
+
+.produk-5::after {
+  content: "ASUS Vivobook 14 A1404ZA\nHarga: 7 Juta";
+  white-space: pre-line;
+}
+
+.testimoni {
+  background-color: #f0f0f0;
+  padding: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.testimoni h2 {
+  margin-bottom: 1em;
+}
+
+.testimoni blockquote {
+  margin: 1em auto;
+  max-width: 600px;
+  font-style: italic;
+  color: #555;
+}
+
+.testimoni cite {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.newsletter h2 {
+  margin-bottom: 1em;
+}
+
+.newsletter form {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 0.5em;
+}
+
+.newsletter button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
